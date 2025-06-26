@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "WOUVH0zHJ6k9pGocNBrzBQ04eYPc+9Som2fXtn+kk5M=",
+  "Source": "AppointmentBooking.Api",
+  "BasePath": "_content/AppointmentBooking.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

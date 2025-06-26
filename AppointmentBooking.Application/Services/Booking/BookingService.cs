@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AppointmentBooking.Application.DTOs.Booking.Dto;
 
 namespace AppointmentBooking.Application.Services.Booking
 {
-    class BookingService
+    public class BookingService : IBookingService
     {
+        public Task CreateBookingAsync(CreateBookingDto dto)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

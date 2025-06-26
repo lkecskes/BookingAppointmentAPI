@@ -1,13 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Mvc;
 
-namespace AppointmentBooking.API.Controllers
+namespace AppointmentBooking.Api.Controllers
 {
-    class BookingController
+    [ApiController]
+    [Route("booking")]
+    public class BookingController : Controller
     {
+        //private readonly IBookingService _service = service;
 
+        //[HttpPost]
+        //public async Task<IActionResult> Create([FromBody] CreateBookingDto dto)
+        //{
+        //    await _service.CreateBookingAsync(dto);
+        //    return Ok();
+        //}
     }
 }

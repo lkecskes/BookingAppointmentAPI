@@ -1,0 +1,16 @@
+D:\HobbyProjects\AppointmentBooking_API\BookingAppointmentAPI\AppointmentBooking.Contracts\bin\Debug\net8.0\AppointmentBooking.Contracts.deps.json
+D:\HobbyProjects\AppointmentBooking_API\BookingAppointmentAPI\AppointmentBooking.Contracts\bin\Debug\net8.0\AppointmentBooking.Contracts.dll
+D:\HobbyProjects\AppointmentBooking_API\BookingAppointmentAPI\AppointmentBooking.Contracts\bin\Debug\net8.0\AppointmentBooking.Contracts.pdb
+D:\HobbyProjects\AppointmentBooking_API\BookingAppointmentAPI\AppointmentBooking.Contracts\bin\Debug\net8.0\AppointmentBooking.Domain.dll
+D:\HobbyProjects\AppointmentBooking_API\BookingAppointmentAPI\AppointmentBooking.Contracts\bin\Debug\net8.0\AppointmentBooking.Domain.pdb
+D:\HobbyProjects\AppointmentBooking_API\BookingAppointmentAPI\AppointmentBooking.Contracts\obj\Debug\net8.0\AppointmentBooking.Contracts.csproj.AssemblyReference.cache
+D:\HobbyProjects\AppointmentBooking_API\BookingAppointmentAPI\AppointmentBooking.Contracts\obj\Debug\net8.0\AppointmentBooking.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\HobbyProjects\AppointmentBooking_API\BookingAppointmentAPI\AppointmentBooking.Contracts\obj\Debug\net8.0\AppointmentBooking.Contracts.AssemblyInfoInputs.cache
+D:\HobbyProjects\AppointmentBooking_API\BookingAppointmentAPI\AppointmentBooking.Contracts\obj\Debug\net8.0\AppointmentBooking.Contracts.AssemblyInfo.cs
+D:\HobbyProjects\AppointmentBooking_API\BookingAppointmentAPI\AppointmentBooking.Contracts\obj\Debug\net8.0\AppointmentBooking.Contracts.csproj.CoreCompileInputs.cache
+D:\HobbyProjects\AppointmentBooking_API\BookingAppointmentAPI\AppointmentBooking.Contracts\obj\Debug\net8.0\AppointmentBooking.Contracts.sourcelink.json
+D:\HobbyProjects\AppointmentBooking_API\BookingAppointmentAPI\AppointmentBooking.Contracts\obj\Debug\net8.0\Appointm.2C015249.Up2Date
+D:\HobbyProjects\AppointmentBooking_API\BookingAppointmentAPI\AppointmentBooking.Contracts\obj\Debug\net8.0\AppointmentBooking.Contracts.dll
+D:\HobbyProjects\AppointmentBooking_API\BookingAppointmentAPI\AppointmentBooking.Contracts\obj\Debug\net8.0\refint\AppointmentBooking.Contracts.dll
+D:\HobbyProjects\AppointmentBooking_API\BookingAppointmentAPI\AppointmentBooking.Contracts\obj\Debug\net8.0\AppointmentBooking.Contracts.pdb
+D:\HobbyProjects\AppointmentBooking_API\BookingAppointmentAPI\AppointmentBooking.Contracts\obj\Debug\net8.0\ref\AppointmentBooking.Contracts.dll

@@ -1,17 +1,96 @@
 {
   "format": 1,
   "restore": {
-    "D:\\HobbyProjects\\AppointmentBookingSystem\\AppointmentBooking.Infrastructure\\AppointmentBooking.Infrastructure.csproj": {}
+    "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Infrastructure\\AppointmentBooking.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\HobbyProjects\\AppointmentBookingSystem\\AppointmentBooking.Infrastructure\\AppointmentBooking.Infrastructure.csproj": {
+    "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Application\\AppointmentBooking.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\HobbyProjects\\AppointmentBookingSystem\\AppointmentBooking.Infrastructure\\AppointmentBooking.Infrastructure.csproj",
-        "projectName": "AppointmentBooking.Infrastructure",
-        "projectPath": "D:\\HobbyProjects\\AppointmentBookingSystem\\AppointmentBooking.Infrastructure\\AppointmentBooking.Infrastructure.csproj",
+        "projectUniqueName": "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Application\\AppointmentBooking.Application.csproj",
+        "projectName": "AppointmentBooking.Application",
+        "projectPath": "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Application\\AppointmentBooking.Application.csproj",
         "packagesPath": "C:\\Users\\kecsk.LACI\\.nuget\\packages\\",
-        "outputPath": "D:\\HobbyProjects\\AppointmentBookingSystem\\AppointmentBooking.Infrastructure\\obj\\",
+        "outputPath": "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kecsk.LACI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Domain\\AppointmentBooking.Domain.csproj": {
+                "projectPath": "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Domain\\AppointmentBooking.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Domain\\AppointmentBooking.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Domain\\AppointmentBooking.Domain.csproj",
+        "projectName": "AppointmentBooking.Domain",
+        "projectPath": "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Domain\\AppointmentBooking.Domain.csproj",
+        "packagesPath": "C:\\Users\\kecsk.LACI\\.nuget\\packages\\",
+        "outputPath": "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -65,7 +144,86 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Infrastructure\\AppointmentBooking.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Infrastructure\\AppointmentBooking.Infrastructure.csproj",
+        "projectName": "AppointmentBooking.Infrastructure",
+        "projectPath": "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Infrastructure\\AppointmentBooking.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\kecsk.LACI\\.nuget\\packages\\",
+        "outputPath": "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kecsk.LACI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Application\\AppointmentBooking.Application.csproj": {
+                "projectPath": "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Application\\AppointmentBooking.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

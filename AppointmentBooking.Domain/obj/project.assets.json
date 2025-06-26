@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\HobbyProjects\\AppointmentBookingSystem\\AppointmentBooking.Domain\\AppointmentBooking.Domain.csproj",
+      "projectUniqueName": "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Domain\\AppointmentBooking.Domain.csproj",
       "projectName": "AppointmentBooking.Domain",
-      "projectPath": "D:\\HobbyProjects\\AppointmentBookingSystem\\AppointmentBooking.Domain\\AppointmentBooking.Domain.csproj",
+      "projectPath": "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Domain\\AppointmentBooking.Domain.csproj",
       "packagesPath": "C:\\Users\\kecsk.LACI\\.nuget\\packages\\",
-      "outputPath": "D:\\HobbyProjects\\AppointmentBookingSystem\\AppointmentBooking.Domain\\obj\\",
+      "outputPath": "D:\\HobbyProjects\\AppointmentBooking_API\\BookingAppointmentAPI\\AppointmentBooking.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -72,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

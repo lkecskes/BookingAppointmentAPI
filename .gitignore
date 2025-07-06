@@ -1,0 +1,11 @@
+﻿.vs
+AppointmentBooking.Contracts/bin
+AppointmentBooking.Contracts/obj
+AppointmentBooking.Domain/obj
+AppointmentBooking.Infrastructure/bin
+AppointmentBooking.Infrastructure/obj
+AppointmentBooking.Application/bin
+AppointmentBooking.Application/obj
+AppointmentBooking.Domain/bin
+AppointmentBooking.API/bin
+AppointmentBooking.API/obj

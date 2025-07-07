@@ -7,13 +7,12 @@ var builder = WebApplication.CreateBuilder(args);
 // 1) CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowFrontend", policy =>
-        policy
-          .WithOrigins("http://localhost:4200") // Angular dev szerver
-          .AllowAnyHeader()
-          .AllowAnyMethod()
-    );
+    options.AddPolicy("AllowAngularDevClient",
+        builder => builder.WithOrigins("http://localhost:4200")
+                          .AllowAnyMethod()
+                          .AllowAnyHeader());
 });
+
 
 // 2) Szolgáltatások regisztrálása
 builder.Services.AddApplicationServices();
@@ -45,7 +44,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 // CORS middleware-t a routing elõtt kell hívni
-app.UseCors("AllowFrontend");
+app.UseCors("AllowAngularDevClient");
 
 app.MapControllers();
 

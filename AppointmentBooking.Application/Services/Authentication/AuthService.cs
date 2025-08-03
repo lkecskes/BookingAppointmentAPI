@@ -1,6 +1,9 @@
 ﻿using AppointmentBooking.Application.DTOs.Authentication;
 using AppointmentBooking.Application.Services.Users;
 using AppointmentBooking.Domain.Entities;
+using AppointmentBooking.Domain.Enums;
+using System.Net.Mail;
+using System.Text.RegularExpressions;
 
 namespace AppointmentBooking.Application.Services.Authentication
 {
@@ -18,14 +21,14 @@ namespace AppointmentBooking.Application.Services.Authentication
             var user = await _userRepository.GetUserByEmailAsync(@params.Email);
             if (user == null)
             {
-                return new AuthenticationResultDto(false, null, "User not found");
+                return new AuthenticationResultDto(false, null, "Nem található a felhasználó!");
             }
 
             // Jelszó ellenőrzése BCrypt segítségével
             var validPassword = BCrypt.Net.BCrypt.Verify(@params.Password, user.Password);
             if (!validPassword)
             {
-                return new AuthenticationResultDto(false, null, "Invalid password");
+                return new AuthenticationResultDto(false, null, "Érvénytelen jelszó!");
             }
 
             // Token generálás (pl. JWT vagy ideiglenes token)
@@ -40,7 +43,23 @@ namespace AppointmentBooking.Application.Services.Authentication
             var existingUser = await _userRepository.GetUserByEmailAsync(@params.Email);
             if (existingUser != null)
             {
-                return new AuthenticationResultDto(false, null, "Email is already taken");
+                return new AuthenticationResultDto(false, null, "Ezzel az Email címmel már regisztráltak!");
+            }
+
+            // User type check
+
+            bool isValid = Enum.IsDefined(typeof(UserType), @params.UserType);
+
+            if (!isValid)
+            {
+                return new AuthenticationResultDto(false, null, "Érvénytelen felhasználói típus!");
+            }
+
+            // Email check
+
+            if (!IsValidEmail(@params.Email))
+            {
+                return new AuthenticationResultDto(false, null, "Érvénytelen email formátum!");
             }
 
             // 2. Jelszó hash-elése
@@ -74,6 +93,34 @@ namespace AppointmentBooking.Application.Services.Authentication
         {
             // TODO: JWT vagy más token generálás
             return "fake-jwt-token";
+        }
+
+        /// <summary>
+        /// Email format checker
+        /// </summary>
+        /// <param name="email">Email address came from user</param>
+        /// <returns>Determines if the email format is valid or not</returns>
+        public static bool IsValidEmail(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
+
+            try
+            {
+                // Normalize and validate with MailAddress
+                var normalizedEmail = new MailAddress(email).Address;
+
+                // Optional stricter format check with regex
+                return Regex.IsMatch(
+                    normalizedEmail,
+                    @"^[^@\s]+@[^@\s]+\.[^@\s]+$",
+                    RegexOptions.IgnoreCase | RegexOptions.Compiled
+                );
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

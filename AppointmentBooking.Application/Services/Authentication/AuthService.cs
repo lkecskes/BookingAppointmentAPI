@@ -34,7 +34,7 @@ namespace AppointmentBooking.Application.Services.Authentication
             // Token generálás (pl. JWT vagy ideiglenes token)
             var token = GenerateToken(user);
 
-            return new AuthenticationResultDto(true, token);
+            return new AuthenticationResultDto(true, token, "Sikeres belépés!");
         }
 
         public async Task<AuthenticationResultDto> RegisterAsync(AuthenticationRegisterParamsDto @params)

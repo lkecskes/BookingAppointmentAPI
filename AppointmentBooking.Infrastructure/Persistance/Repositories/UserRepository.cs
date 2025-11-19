@@ -18,9 +18,19 @@ namespace AppointmentBooking.Infrastructure.Persistance.Repositories
             return await _context.Users.SingleOrDefaultAsync(u => u.EmailAddress == email);
         }
 
+        public async Task<UserEntity?> GetUserByIdAsync(int userId)
+        {
+            return await _context.Users.SingleOrDefaultAsync(u => u.UserId == userId);
+        }
+
         public async Task AddUserAsync(UserEntity user)
         {
             await _context.Users.AddAsync(user);
+        }
+
+        public async Task UpdateUserAsync(UserEntity user)
+        {
+            _context.Users.Update(user);
         }
 
         public async Task SaveChangesAsync()

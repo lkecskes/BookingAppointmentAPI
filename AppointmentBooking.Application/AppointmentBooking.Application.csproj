@@ -8,9 +8,12 @@
   <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.4" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.35.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.35.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AppointmentBooking.Contracts\AppointmentBooking.Contracts.csproj" />
     <ProjectReference Include="..\AppointmentBooking.Domain\AppointmentBooking.Domain.csproj" />
   </ItemGroup>
 
